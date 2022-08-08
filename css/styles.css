@@ -1,0 +1,41 @@
+.backgroundimage {
+    background-image: url(../images/sky.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex 
+}
+.clouds img {
+    width: 250px;
+
+}
+.cloud2 img {
+    width: 300px;
+}
+.clouds {
+    position:  absolute;
+    top: 150px;
+    left: 50px;
+    animation: movingcloud1 60s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+
+}
+.cloud2 {
+    position: absolute;
+    top: 250px;
+    left: 260px;
+    animation: movingcloud2 45s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+@keyframes movingcloud1 {
+    from {left: 50px;}
+    to {left: 900px;}
+}
+@keyframes movingcloud2 {
+    from {left: 260px;}
+    to {left: 1000px;}
+}
